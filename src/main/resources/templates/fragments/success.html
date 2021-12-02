@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <head th:replace="fragments/head :: common_header(title=${title})"></head>
+
+<body>
+<div class="w-1/4 h-1/4 mx-auto card m-2 cursor-pointer border border-gray-400 rounded-lg  mt-80">
+    <div class="m-3">
+        <p class="font-light font-mono text-sm mx-auto text-gray-700 hover:text-gray-900 transition-all duration-200 align-middle text-center	">
+        <h1 class="text-center mb-10 mt-10">
+            You added successfully an employee!
+        </h1>
+        <div class="flex justify-around content-center">
+            <a href="/form">
+                <input type="submit" value="Add Another" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"/>
+            </a>
+                <a href="/" >
+                <input type="button" value="back to Home" class="mgbg-gray-500 hover:bg-gray-700 text-black  hover:text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"/>
+            </a>
+        </div>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYP HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:include="layouts/layout :: page(${indexTitle}, ${employees})">
+    <head th:replace="fragments/head :: common_header(${indexTitle})"></head>
+
+    <body>
+            <!-- replaces the div with the fragment -->
+            <!-- include only uses the content
+            <div th:include="_fragments :: footer"></div> -->
+            <!-- inset adds the fragment inside
+            <div th:insert="_fragments :: footer"></div>-->
+
+    </body>
+</html>

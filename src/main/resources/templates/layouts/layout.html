@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="page(title,employees)">
+    <head th:replace="fragments/head :: common_header(title=${title})"></head>
+
+    <body>
+        <div class="flex flex-col h-screen">
+            <div th:replace="fragments/header :: header"></div>
+            <div th:replace="fragments/content :: content(${employees})"></div>
+            <div th:replace="fragments/footer :: footer"></div>
+        </div>
+    </body>
+</html>
